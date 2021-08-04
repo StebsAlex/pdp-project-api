@@ -15,10 +15,10 @@ const typeDefs = gql`
 
   # Queries
   type Query {
-    getAllChannel: [Channel!]!
-    getSportsChannel: [Channel!]!
-    getNewsChannel: [Channel!]!
-    getBasket: [Basket!]
+    channels: [Channel!]!
+    sportsChannels: [Channel!]!
+    newsChannels: [Channel!]!
+    basket: [Basket!]
   }
 
   # Mutation

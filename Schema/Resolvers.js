@@ -3,16 +3,16 @@ const { channels, basket } = require("../data");
 const resolvers = {
   Query: {
     // Channel
-    getAllChannel() {
+    channels() {
       return channels;
     },
-    getSportsChannel() {
+    sportsChannels() {
       const sportsChannel = channels.filter(
         (channel) => channel.category === "Sports"
       );
       return sportsChannel;
     },
-    getNewsChannel() {
+    newsChannels() {
       const newsChannel = channels.filter(
         (channel) => channel.category === "News"
       );
@@ -20,7 +20,7 @@ const resolvers = {
     },
 
     // Basket
-    getBasket() {
+    basket() {
       return basket;
     },
   },
